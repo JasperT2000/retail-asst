@@ -1,0 +1,39 @@
+services:
+  - type: web
+    name: retail-ai-backend
+    runtime: docker
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: .
+    plan: free
+    region: singapore
+    branch: main
+    healthCheckPath: /health
+    envVars:
+      - key: APP_ENV
+        value: production
+      - key: NEO4J_URI
+        sync: false
+      - key: NEO4J_USERNAME
+        sync: false
+      - key: NEO4J_PASSWORD
+        sync: false
+      - key: GROQ_API_KEY
+        sync: false
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: LANGFUSE_PUBLIC_KEY
+        sync: false
+      - key: LANGFUSE_SECRET_KEY
+        sync: false
+      - key: LANGFUSE_HOST
+        value: https://cloud.langfuse.com
+      - key: SLACK_WEBHOOK_URL
+        sync: false
+      - key: MONITOR_PIN
+        sync: false
+      - key: ALLOWED_ORIGINS
+        sync: false
+      - key: CONFIDENCE_THRESHOLD
+        value: "0.65"

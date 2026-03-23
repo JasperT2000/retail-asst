@@ -1,0 +1,452 @@
+[
+  {
+    "id": "eval-001",
+    "store_slug": "jbhifi",
+    "question": "Where can I find Sony headphones in the store?",
+    "ground_truth": "Sony WH-1000XM5 headphones are located at Aisle 3, Bay 12 in the Headphones & Audio section on the Ground Floor.",
+    "expected_intent": "location",
+    "expected_nodes": ["Product", "AisleLocation"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "eval-002",
+    "store_slug": "jbhifi",
+    "question": "How much does the MacBook Air M3 cost?",
+    "ground_truth": "The Apple MacBook Air 13-inch (M3) is priced at $1,699.",
+    "expected_intent": "product_info",
+    "expected_nodes": ["Product"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "eval-003",
+    "store_slug": "jbhifi",
+    "question": "Is the PS5 in stock at JB Hi-Fi?",
+    "ground_truth": "The PlayStation 5 Disc Edition is currently low in stock with only 3 units remaining. It is located at Aisle 4, Bay 8 in the Gaming Consoles section.",
+    "expected_intent": "availability",
+    "expected_nodes": ["Product"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "eval-004",
+    "store_slug": "jbhifi",
+    "question": "Where are the Apple products located?",
+    "ground_truth": "Apple MacBook Air is in Aisle 2, Bay 4 (Apple Products section). iPhone 15 Pro is in Aisle 5, Bay 3 (Apple Mobile section). Both are on the Ground Floor.",
+    "expected_intent": "location",
+    "expected_nodes": ["Product", "AisleLocation"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "eval-005",
+    "store_slug": "jbhifi",
+    "question": "What is the price of the Sony WH-1000XM5 headphones?",
+    "ground_truth": "The Sony WH-1000XM5 headphones are currently on sale for $449, reduced from the original price of $549.",
+    "expected_intent": "product_info",
+    "expected_nodes": ["Product"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "eval-006",
+    "store_slug": "bunnings",
+    "question": "What are the store opening hours?",
+    "ground_truth": "Bunnings Warehouse store hours vary by day. Please check the store's website or call ahead for current opening hours.",
+    "expected_intent": "general",
+    "expected_nodes": ["Store"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "eval-007",
+    "store_slug": "bunnings",
+    "question": "What is the return policy for power tools at Bunnings?",
+    "ground_truth": "Bunnings offers returns on power tools with proof of purchase. Items must be in original condition. Faulty products are covered under Australian Consumer Law.",
+    "expected_intent": "policy",
+    "expected_nodes": ["PolicyDoc"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "eval-008",
+    "store_slug": "babybunting",
+    "question": "Where can I find prams in Baby Bunting?",
+    "ground_truth": "Prams and strollers are located in the Prams & Strollers category section. Ask a staff member for the exact aisle location.",
+    "expected_intent": "location",
+    "expected_nodes": ["Category", "AisleLocation"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "eval-009",
+    "store_slug": "supercheapauto",
+    "question": "Do you sell engine oil at Supercheap Auto?",
+    "ground_truth": "Yes, Supercheap Auto stocks a wide range of engine oils and fluids in the Oils & Fluids category.",
+    "expected_intent": "product_info",
+    "expected_nodes": ["Category", "Product"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "eval-010",
+    "store_slug": "jbhifi",
+    "question": "Is the iPhone 15 Pro in stock?",
+    "ground_truth": "Yes, the Apple iPhone 15 Pro 256GB in Black Titanium is in stock with 15 units available. It is priced at $1,849.",
+    "expected_intent": "availability",
+    "expected_nodes": ["Product"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "eval-011",
+    "store_slug": "jbhifi",
+    "question": "What Samsung TVs do you have?",
+    "ground_truth": "JB Hi-Fi stocks the Samsung 65-inch QLED 4K Smart TV QN65Q80C, currently on sale for $1,595 (was $2,299). It features 4K QLED, 144Hz refresh rate, and built-in streaming apps.",
+    "expected_intent": "product_info",
+    "expected_nodes": ["Product"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "eval-012",
+    "store_slug": "babybunting",
+    "question": "What car seat brands do you carry?",
+    "ground_truth": "Baby Bunting stocks car seats from leading brands. Browse the Car Seats category for current stock, or ask an in-store consultant for guidance on choosing the right seat for your child.",
+    "expected_intent": "product_info",
+    "expected_nodes": ["Category", "Product"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "eval-013",
+    "store_slug": "supercheapauto",
+    "question": "Where are the car batteries located?",
+    "ground_truth": "Car batteries are found in the Batteries & Electrical category section at Supercheap Auto.",
+    "expected_intent": "location",
+    "expected_nodes": ["Category", "AisleLocation"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "eval-014",
+    "store_slug": "bunnings",
+    "question": "What garden tools do you sell?",
+    "ground_truth": "Bunnings stocks a wide range of garden tools and outdoor products in the Garden & Outdoor category, including hand tools, power tools for the garden, and outdoor furniture.",
+    "expected_intent": "product_info",
+    "expected_nodes": ["Category", "Product"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "eval-015",
+    "store_slug": "jbhifi",
+    "question": "What gaming consoles are available at JB Hi-Fi?",
+    "ground_truth": "JB Hi-Fi stocks the PlayStation 5 Disc Edition at $799, located in Aisle 4, Bay 8. Check in-store for availability of Xbox and Nintendo Switch consoles.",
+    "expected_intent": "product_info",
+    "expected_nodes": ["Product", "Category"],
+    "difficulty": "easy"
+  },
+  {
+    "id": "eval-016",
+    "store_slug": "jbhifi",
+    "question": "What is JB Hi-Fi's return policy?",
+    "ground_truth": "JB Hi-Fi offers 10-day change-of-mind returns on unopened items with original packaging and proof of purchase. Faulty items are covered under Australian Consumer Law with no time limit. Refunds are issued to the original payment method.",
+    "expected_intent": "policy",
+    "expected_nodes": ["PolicyDoc"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "eval-017",
+    "store_slug": "jbhifi",
+    "question": "Does JB Hi-Fi price match competitors?",
+    "ground_truth": "Yes, JB Hi-Fi will match any competitor's current advertised price on identical in-stock items from major Australian retailers including Harvey Norman, The Good Guys, and Officeworks. Show the advertised price in-store at time of purchase.",
+    "expected_intent": "policy",
+    "expected_nodes": ["PolicyDoc"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "eval-018",
+    "store_slug": "jbhifi",
+    "question": "What warranty do I get on a MacBook Air?",
+    "ground_truth": "The MacBook Air comes with Apple's standard 1-year manufacturer warranty. JB Hi-Fi also offers optional Extended Warranty plans. Your rights under Australian Consumer Law apply in addition to any warranty.",
+    "expected_intent": "policy",
+    "expected_nodes": ["PolicyDoc", "Product"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "eval-019",
+    "store_slug": "jbhifi",
+    "question": "How many hours does the MacBook Air M3 battery last?",
+    "ground_truth": "The Apple MacBook Air 13-inch (M3) has a battery life of up to 18 hours.",
+    "expected_intent": "product_info",
+    "expected_nodes": ["Product"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "eval-020",
+    "store_slug": "jbhifi",
+    "question": "What accessories are compatible with the MacBook Air M3?",
+    "ground_truth": "The MacBook Air M3 is compatible with the Apple iPhone 15 Pro, which can be connected via USB-C.",
+    "expected_intent": "recommendation",
+    "expected_nodes": ["Product"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "eval-021",
+    "store_slug": "bunnings",
+    "question": "What is Bunnings' return policy?",
+    "ground_truth": "Bunnings offers returns on products with proof of purchase. Items must be in original condition. The Bunnings Lowest Price Guarantee means they will beat any competitor's price by 10%. Faulty products are covered under Australian Consumer Law.",
+    "expected_intent": "policy",
+    "expected_nodes": ["PolicyDoc"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "eval-022",
+    "store_slug": "bunnings",
+    "question": "What power tools do you stock?",
+    "ground_truth": "Bunnings stocks a comprehensive range of power tools in the Power Tools category, including drills, circular saws, angle grinders, and more from brands like Makita, Milwaukee, DeWalt and Ryobi.",
+    "expected_intent": "product_info",
+    "expected_nodes": ["Category", "Product"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "eval-023",
+    "store_slug": "babybunting",
+    "question": "What is Baby Bunting's price match policy?",
+    "ground_truth": "Baby Bunting offers a price match guarantee on identical items from selected Australian competitors. Contact store staff for details.",
+    "expected_intent": "policy",
+    "expected_nodes": ["PolicyDoc"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "eval-024",
+    "store_slug": "babybunting",
+    "question": "What feeding products do you stock?",
+    "ground_truth": "Baby Bunting stocks a wide range of feeding products including bottles, breast pumps, sterilisers, high chairs, and feeding accessories in the Feeding category.",
+    "expected_intent": "product_info",
+    "expected_nodes": ["Category", "Product"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "eval-025",
+    "store_slug": "supercheapauto",
+    "question": "What car audio products do you have?",
+    "ground_truth": "Supercheap Auto stocks a range of car audio products in the Car Audio & Tech category, including head units, speakers, subwoofers, amplifiers, and dash cams.",
+    "expected_intent": "product_info",
+    "expected_nodes": ["Category", "Product"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "eval-026",
+    "store_slug": "supercheapauto",
+    "question": "What tools and equipment does Supercheap Auto sell?",
+    "ground_truth": "Supercheap Auto stocks a range of automotive tools and equipment in the Tools & Equipment category, including socket sets, torque wrenches, jacks, and diagnostic tools.",
+    "expected_intent": "product_info",
+    "expected_nodes": ["Category", "Product"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "eval-027",
+    "store_slug": "jbhifi",
+    "question": "Does the PS5 support 4K gaming?",
+    "ground_truth": "Yes, the PlayStation 5 supports gaming at up to 4K resolution at 60fps, with select games supporting 4K at 120fps. You will need a 4K TV and an HDMI 2.1 cable for 4K gaming.",
+    "expected_intent": "product_info",
+    "expected_nodes": ["Product", "FAQ"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "eval-028",
+    "store_slug": "jbhifi",
+    "question": "Can I use the Sony WH-1000XM5 with two devices at the same time?",
+    "ground_truth": "Yes, the Sony WH-1000XM5 supports Multipoint Bluetooth connection, allowing connection to two devices simultaneously. Audio will automatically switch between connected devices.",
+    "expected_intent": "product_info",
+    "expected_nodes": ["Product", "FAQ"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "eval-029",
+    "store_slug": "jbhifi",
+    "question": "What Samsung TV sizes does JB Hi-Fi stock?",
+    "ground_truth": "JB Hi-Fi stocks the Samsung QN65Q80C in a 65-inch size. Check in-store or online for other sizes in the Samsung QLED range.",
+    "expected_intent": "product_info",
+    "expected_nodes": ["Product"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "eval-030",
+    "store_slug": "bunnings",
+    "question": "What paint brands do you carry?",
+    "ground_truth": "Bunnings stocks leading paint brands including Dulux, Taubmans, British Paints, and Feast Watson across interior, exterior, and specialty paint ranges in the Paint & Decorating category.",
+    "expected_intent": "product_info",
+    "expected_nodes": ["Category", "Product"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "eval-031",
+    "store_slug": "bunnings",
+    "question": "What plumbing products does Bunnings sell?",
+    "ground_truth": "Bunnings stocks a wide range of plumbing supplies in the Plumbing category, including taps, pipes, fittings, showers, toilets, and water filtration products.",
+    "expected_intent": "product_info",
+    "expected_nodes": ["Category", "Product"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "eval-032",
+    "store_slug": "babybunting",
+    "question": "What nursery furniture does Baby Bunting stock?",
+    "ground_truth": "Baby Bunting's Nursery & Furniture category includes cots, bassinets, change tables, dressers, and nursery accessory sets from leading baby furniture brands.",
+    "expected_intent": "product_info",
+    "expected_nodes": ["Category", "Product"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "eval-033",
+    "store_slug": "babybunting",
+    "question": "What baby safety monitors do you sell?",
+    "ground_truth": "Baby Bunting stocks a range of baby safety and monitoring products in the Safety & Monitors category, including video monitors, audio monitors, baby gates, and outlet covers.",
+    "expected_intent": "product_info",
+    "expected_nodes": ["Category", "Product"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "eval-034",
+    "store_slug": "supercheapauto",
+    "question": "What car cleaning products does Supercheap Auto have?",
+    "ground_truth": "Supercheap Auto's Car Care & Cleaning category includes car wash soaps, waxes, polishes, interior cleaners, and detailing accessories from brands like Turtle Wax, Meguiar's, and Armor All.",
+    "expected_intent": "product_info",
+    "expected_nodes": ["Category", "Product"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "eval-035",
+    "store_slug": "supercheapauto",
+    "question": "What electrical products do you stock for cars?",
+    "ground_truth": "Supercheap Auto's Batteries & Electrical category covers car batteries, battery chargers, jump starters, fuses, relays, wiring kits, and LED lighting upgrades.",
+    "expected_intent": "product_info",
+    "expected_nodes": ["Category", "Product"],
+    "difficulty": "medium"
+  },
+  {
+    "id": "eval-036",
+    "store_slug": "jbhifi",
+    "question": "I'm looking for a laptop under $1500 that's good for video editing",
+    "ground_truth": "For video editing under $1,500, consider the Apple MacBook Air M3 at $1,699 (slightly over budget but exceptional for video editing with its M3 chip's media engine). Alternatively, ask staff about Windows laptops in that price range from Dell, HP, or Lenovo.",
+    "expected_intent": "recommendation",
+    "expected_nodes": ["Product", "Category"],
+    "difficulty": "hard"
+  },
+  {
+    "id": "eval-037",
+    "store_slug": "jbhifi",
+    "question": "What's a good headphone to use with a MacBook for music production?",
+    "ground_truth": "The Sony WH-1000XM5 headphones ($449, on sale from $549) are an excellent choice for music production with a MacBook. They support Hi-Res Audio, LDAC codec, and offer industry-leading noise cancellation. They connect via Bluetooth or 3.5mm cable to the MacBook Air's headphone jack.",
+    "expected_intent": "recommendation",
+    "expected_nodes": ["Product"],
+    "difficulty": "hard"
+  },
+  {
+    "id": "eval-038",
+    "store_slug": "jbhifi",
+    "question": "I want to set up a gaming room with a PS5. What TV should I get?",
+    "ground_truth": "For a PS5 gaming room, the Samsung 65-inch QLED 4K Smart TV QN65Q80C ($1,595, on sale from $2,299) is an ideal pairing. It features HDMI 2.1 for 4K/120fps gaming, 144Hz refresh rate, and VRR support that fully unlocks the PS5's capabilities. Both are frequently bought together at JB Hi-Fi.",
+    "expected_intent": "recommendation",
+    "expected_nodes": ["Product"],
+    "difficulty": "hard"
+  },
+  {
+    "id": "eval-039",
+    "store_slug": "jbhifi",
+    "question": "Compare the MacBook Air M3 and the iPhone 15 Pro — which is better value?",
+    "ground_truth": "These are different product categories. The MacBook Air M3 at $1,699 is a laptop for productivity and creative work. The iPhone 15 Pro at $1,849 is a smartphone. 'Better value' depends on your needs — if you need a portable computer, the MacBook is the choice; for a smartphone upgrade, the iPhone 15 Pro offers the latest A17 Pro chip, titanium build, and advanced camera system.",
+    "expected_intent": "recommendation",
+    "expected_nodes": ["Product"],
+    "difficulty": "hard"
+  },
+  {
+    "id": "eval-040",
+    "store_slug": "bunnings",
+    "question": "I need to renovate a bathroom — what products do I need from Bunnings?",
+    "ground_truth": "For a bathroom renovation at Bunnings, you would typically need: plumbing products (taps, showerhead, toilet suite from the Plumbing category), tiles and adhesive (Paint & Decorating), lighting fixtures (Lighting category), and hand tools for installation (Hand Tools). Visit the Bunnings Bathroom & Kitchen display area for inspiration.",
+    "expected_intent": "recommendation",
+    "expected_nodes": ["Category", "Product"],
+    "difficulty": "hard"
+  },
+  {
+    "id": "eval-041",
+    "store_slug": "bunnings",
+    "question": "What's the difference between a circular saw and an angle grinder?",
+    "ground_truth": "A circular saw is designed for cutting wood and sheet materials in straight lines, making it ideal for framing, decking, and timber work. An angle grinder is a versatile grinding and cutting tool for metal, masonry, and tile — it uses abrasive discs and cutting wheels. Both are available in the Power Tools category at Bunnings.",
+    "expected_intent": "product_info",
+    "expected_nodes": ["Product", "Category"],
+    "difficulty": "hard"
+  },
+  {
+    "id": "eval-042",
+    "store_slug": "babybunting",
+    "question": "My baby is 3 months old — what car seat do I need and what should I look for?",
+    "ground_truth": "For a 3-month-old, you need an infant capsule or convertible car seat that can be used rear-facing. In Australia, babies must be rear-facing until they reach the maximum weight for their seat (typically 8–12kg for capsules). Baby Bunting's Car Seats category has a range of options, and in-store consultants can provide free fitting advice and child restraint checks.",
+    "expected_intent": "recommendation",
+    "expected_nodes": ["Category", "Product"],
+    "difficulty": "hard"
+  },
+  {
+    "id": "eval-043",
+    "store_slug": "babybunting",
+    "question": "What's the best pram for a newborn that can also be used when they're older?",
+    "ground_truth": "For a newborn pram that grows with your child, look for a travel system or modular pram in Baby Bunting's Prams & Strollers category. Key features to look for: lie-flat bassinet position for newborns, ability to convert to a toddler seat, compatibility with an infant capsule for use from birth, and good weight capacity. Ask Baby Bunting's in-store pram specialists for a hands-on demonstration.",
+    "expected_intent": "recommendation",
+    "expected_nodes": ["Category", "Product"],
+    "difficulty": "hard"
+  },
+  {
+    "id": "eval-044",
+    "store_slug": "supercheapauto",
+    "question": "My car battery keeps going flat — what do I need?",
+    "ground_truth": "If your car battery keeps going flat, you may need a new battery or a battery charger/maintainer for infrequent-use vehicles. Supercheap Auto's Batteries & Electrical category has replacement car batteries (we can check compatibility with your car) and battery chargers. Bring your car in for a free battery test at select Supercheap Auto stores.",
+    "expected_intent": "recommendation",
+    "expected_nodes": ["Category", "Product"],
+    "difficulty": "hard"
+  },
+  {
+    "id": "eval-045",
+    "store_slug": "supercheapauto",
+    "question": "I want to upgrade my car's audio system — what's involved?",
+    "ground_truth": "Upgrading your car audio typically starts with a new head unit (radio/display unit) from the Car Audio & Tech category, then speakers, and optionally a subwoofer and amplifier. You'll also need wiring kits and potentially a fitting kit specific to your car's make and model. Supercheap Auto offers installation accessories, and some stores have fitting services available.",
+    "expected_intent": "recommendation",
+    "expected_nodes": ["Category", "Product"],
+    "difficulty": "hard"
+  },
+  {
+    "id": "eval-046",
+    "store_slug": "jbhifi",
+    "question": "I dropped my iPhone — does JB Hi-Fi's warranty cover accidental damage?",
+    "ground_truth": "JB Hi-Fi's standard manufacturer warranty and change-of-mind return policy do not cover accidental damage. Accidental damage may be covered by an optional Extended Warranty plan (if purchased at the time of sale with accidental damage coverage), or by your contents insurance. Apple's AppleCare+ plan also covers accidental damage for a fee. The Australian Consumer Law does not cover damage caused by misuse.",
+    "expected_intent": "policy",
+    "expected_nodes": ["PolicyDoc"],
+    "difficulty": "hard"
+  },
+  {
+    "id": "eval-047",
+    "store_slug": "jbhifi",
+    "question": "Can I return a PS5 I bought two weeks ago because I changed my mind?",
+    "ground_truth": "Under JB Hi-Fi's change-of-mind return policy, you have 10 days to return an item if you change your mind. At two weeks (14 days), you are outside the 10-day change-of-mind window. However, if the PS5 is faulty, your rights under Australian Consumer Law still apply regardless of the time elapsed. Contact JB Hi-Fi customer service or visit the store with your proof of purchase.",
+    "expected_intent": "policy",
+    "expected_nodes": ["PolicyDoc"],
+    "difficulty": "hard"
+  },
+  {
+    "id": "eval-048",
+    "store_slug": "bunnings",
+    "question": "Can I return a power tool I've used once but it didn't work properly for my project?",
+    "ground_truth": "If the power tool didn't perform as expected for a legitimate use case (not fit for purpose), you may have a claim under Australian Consumer Law regardless of whether you've used it. This is different from a change-of-mind return. Bring the tool, proof of purchase, and explain the issue to Bunnings staff. If the tool is faulty, ACL entitles you to a repair, replacement, or refund.",
+    "expected_intent": "policy",
+    "expected_nodes": ["PolicyDoc"],
+    "difficulty": "hard"
+  },
+  {
+    "id": "eval-049",
+    "store_slug": "babybunting",
+    "question": "My pram has a broken wheel after 6 months — what are my rights?",
+    "ground_truth": "A pram with a broken wheel after 6 months of normal use is likely a manufacturing defect covered under Australian Consumer Law. Prams are considered durable goods expected to last several years. You are entitled to a remedy (repair, replacement, or refund) from Baby Bunting. Bring the pram and proof of purchase to the store.",
+    "expected_intent": "policy",
+    "expected_nodes": ["PolicyDoc"],
+    "difficulty": "hard"
+  },
+  {
+    "id": "eval-050",
+    "store_slug": "supercheapauto",
+    "question": "I bought the wrong motor oil for my car — can I return it if it's unopened?",
+    "ground_truth": "Yes, Supercheap Auto accepts returns of unopened items purchased in error, subject to proof of purchase and the item being in original resalable condition. Motor oil that is sealed and unopened can generally be returned or exchanged for the correct product. Visit the store with the product and your receipt.",
+    "expected_intent": "policy",
+    "expected_nodes": ["PolicyDoc"],
+    "difficulty": "hard"
+  }
+]

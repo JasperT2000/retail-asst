@@ -1,0 +1,113 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "StoreData",
+  "description": "Schema for a processed store data JSON file",
+  "type": "object",
+  "required": ["store", "categories", "products", "policies"],
+  "properties": {
+    "store": {
+      "type": "object",
+      "required": ["slug", "name", "address", "phone", "primary_color"],
+      "properties": {
+        "slug": { "type": "string" },
+        "name": { "type": "string" },
+        "address": { "type": "string" },
+        "phone": { "type": "string" },
+        "opening_hours": { "type": "object" },
+        "primary_color": { "type": "string", "pattern": "^#[0-9A-Fa-f]{6}$" },
+        "logo_url": { "type": "string" }
+      }
+    },
+    "categories": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["slug", "name"],
+        "properties": {
+          "slug": { "type": "string" },
+          "name": { "type": "string" },
+          "description": { "type": "string" },
+          "image_url": { "type": "string" }
+        }
+      }
+    },
+    "products": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["slug", "category_slug", "name", "brand", "price", "short_description", "stock_status"],
+        "properties": {
+          "slug": { "type": "string" },
+          "category_slug": { "type": "string" },
+          "name": { "type": "string" },
+          "brand": { "type": "string" },
+          "model_number": { "type": "string" },
+          "price": { "type": "number", "minimum": 0.01 },
+          "original_price": { "type": ["number", "null"], "minimum": 0.01 },
+          "description": { "type": "string" },
+          "short_description": { "type": "string" },
+          "specifications": { "type": "object" },
+          "image_url": { "type": "string" },
+          "stock_status": {
+            "type": "string",
+            "enum": ["in_stock", "low_stock", "out_of_stock"]
+          },
+          "stock_quantity": { "type": "integer", "minimum": 0 },
+          "sku": { "type": "string" },
+          "aisle_location": {
+            "type": "object",
+            "required": ["aisle", "bay", "section", "floor", "display_label"],
+            "properties": {
+              "aisle": { "type": "string" },
+              "bay": { "type": "string" },
+              "section": { "type": "string" },
+              "floor": { "type": "string" },
+              "display_label": { "type": "string" }
+            }
+          },
+          "faqs": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["question", "answer"],
+              "properties": {
+                "question": { "type": "string" },
+                "answer": { "type": "string" }
+              }
+            }
+          },
+          "compatible_with": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "alternatives": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "bought_with": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        }
+      }
+    },
+    "policies": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["policy_id", "policy_type", "title", "content"],
+        "properties": {
+          "policy_id": { "type": "string" },
+          "policy_type": {
+            "type": "string",
+            "enum": ["returns", "warranty", "price_match", "loyalty", "layby", "delivery", "privacy", "trade_in"]
+          },
+          "title": { "type": "string" },
+          "content": { "type": "string" },
+          "summary": { "type": "string" },
+          "last_updated": { "type": "string" }
+        }
+      }
+    }
+  }
+}

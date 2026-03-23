@@ -1,0 +1,14 @@
+frontend/
+scripts/
+data/
+backend/eval/
+backend/__pycache__/
+backend/**/__pycache__/
+**/*.pyc
+**/*.pyo
+.git/
+.github/
+*.md
+.env
+.env.*
+!.env.example

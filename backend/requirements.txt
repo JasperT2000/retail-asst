@@ -1,0 +1,38 @@
+# Runtime dependencies for the Retail AI Store Assistant backend
+# Install with: pip install -r backend/requirements.txt
+
+# --- Web framework ---
+fastapi>=0.111.0
+uvicorn[standard]>=0.30.0
+python-multipart>=0.0.9
+
+# --- Data validation ---
+pydantic>=2.7.0
+pydantic-settings>=2.3.0
+
+# --- Async HTTP / networking ---
+httpx>=0.27.0
+
+# --- Config ---
+python-dotenv>=1.0.0
+
+# --- Logging ---
+structlog>=24.1.0
+
+# --- Neo4j graph + vector DB ---
+neo4j>=5.20.0
+
+# --- Retry logic ---
+tenacity>=8.3.0
+
+# --- LLM clients ---
+openai>=1.35.0
+groq>=0.9.0
+google-generativeai>=0.7.2
+
+# --- Observability ---
+langfuse>=2.7.3,<3.0.0
+
+# --- RAGAS benchmarking (only needed for eval scripts) ---
+ragas>=0.1.9
+datasets>=2.20.0
