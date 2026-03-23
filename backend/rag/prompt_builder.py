@@ -8,7 +8,6 @@ All prompts use Australian English spelling.
 
 from __future__ import annotations
 
-import json
 
 import structlog
 

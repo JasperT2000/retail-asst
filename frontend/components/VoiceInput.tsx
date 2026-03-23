@@ -28,7 +28,7 @@ export default function VoiceInput({
 }: VoiceInputProps) {
   const [isListening, setIsListening] = useState(false);
   const [supported, setSupported] = useState(false);
-  const recognitionRef = useRef<SpeechRecognition | null>(null);
+  const recognitionRef = useRef<any>(null);
 
   useEffect(() => {
     // Check support client-side only
@@ -41,8 +41,7 @@ export default function VoiceInput({
   const toggle = useCallback(() => {
     if (!supported) return;
 
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const SR = (window as any).SpeechRecognition ?? (window as any).webkitSpeechRecognition;
+    const SR = (window as any).SpeechRecognition ?? (window as any).webkitSpeechRecognition; // eslint-disable-line
 
     if (isListening) {
       recognitionRef.current?.stop();
@@ -50,12 +49,12 @@ export default function VoiceInput({
       return;
     }
 
-    const recognition: SpeechRecognition = new SR();
+    const recognition = new SR();
     recognition.lang = "en-AU";
     recognition.interimResults = false;
     recognition.maxAlternatives = 1;
 
-    recognition.onresult = (event: SpeechRecognitionEvent) => {
+    recognition.onresult = (event: any) => {
       const transcript = event.results[0][0].transcript;
       onTranscript(transcript);
       if (autoSubmit && onSubmit) {

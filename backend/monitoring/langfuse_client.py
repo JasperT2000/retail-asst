@@ -11,7 +11,6 @@ propagate to the main pipeline.
 from __future__ import annotations
 
 import os
-import time
 from typing import Any
 
 import structlog

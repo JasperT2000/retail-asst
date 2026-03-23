@@ -102,9 +102,6 @@ class HybridRetriever:
                 merged.append(item)
                 seen_ids.add(node_id)
 
-        top_vector_score = (
-            max((r.get("score", 0.0) for r in vector_results), default=0.0)
-        )
         confidence = self._compute_confidence(graph_results, vector_results, intent)
         source_nodes = [_node_id(n) for n in merged if _node_id(n)]
         merged_context = _format_merged_context(merged)

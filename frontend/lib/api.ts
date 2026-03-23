@@ -96,7 +96,7 @@ export async function fetchProduct(
   return {
     ...(raw.product as unknown as ProductDetail),
     location: raw.location as ProductDetail["location"],
-    faqs: raw.faqs as ProductDetail["faqs"],
+    faqs: raw.faqs as unknown as ProductDetail["faqs"],
     compatible_with: raw.compatible_with,
     alternatives: raw.alternatives,
   };

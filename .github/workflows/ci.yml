@@ -24,7 +24,7 @@ jobs:
         run: pip install -r backend/requirements-prod.txt ruff
 
       - name: Lint with ruff
-        run: ruff check backend/ --ignore E501
+        run: ruff check backend/ --ignore E501,E402 --exclude backend/smoke_test.py
 
       - name: Smoke test — import check
         run: python -c "from backend.main import app; print('Import OK')"

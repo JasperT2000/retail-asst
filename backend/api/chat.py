@@ -19,7 +19,7 @@ import uuid
 from typing import AsyncGenerator
 
 import structlog
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter
 from fastapi.responses import StreamingResponse
 from pydantic import BaseModel, Field, field_validator
 
