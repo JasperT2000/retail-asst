@@ -33,3 +33,4 @@ data/processed/
 # IDE
 .vscode/
 .idea/
+.claude/
