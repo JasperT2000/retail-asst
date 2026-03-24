@@ -2,8 +2,8 @@
  * Zustand global state store for the Retail AI Store Assistant.
  *
  * Manages chat history, streaming state, metadata, voice preference,
- * and the active session ID. Voice preference is persisted to localStorage.
- * Chat history is preserved across navigation but cleared on store change.
+ * and the active session ID. Only voice preference is persisted to localStorage;
+ * chat history and session ID are ephemeral (reset on every fresh page load).
  */
 
 import { create } from "zustand";
@@ -117,12 +117,10 @@ export const useAppStore = create<AppState>()(
     }),
     {
       name: "retail-ai-app",
-      // Only persist preferences and session — not ephemeral streaming state
+      // Only persist user preferences — chat history and session must never
+      // survive a fresh page load to prevent one user seeing another's messages.
       partialize: (state) => ({
         voiceEnabled: state.voiceEnabled,
-        currentStore: state.currentStore,
-        chatHistory: state.chatHistory,
-        sessionId: state.sessionId,
       }),
     }
   )
